@@ -1,0 +1,38 @@
+@media (max-width: 767.98px){
+
+header{
+    nav{
+        @include Colum;
+    }
+}
+
+nav{
+    img{
+        padding: 15px 0 ;
+    }
+}
+
+.img-box{
+    width: 100%;
+     @include shadow-2
+}
+
+.h-text{
+    display: flex;
+    background-color: ($grey-2);
+    width: 100%;
+    gap: 17px;
+    @include Flexcenter;
+    font-family:"Roboto",sans-serif;
+    font-weight:500;
+    @include shadow;
+}
+
+.fa-solid{
+    color: ($grey);
+    width: 12px;
+    height: 16px;
+}
+
+
+}

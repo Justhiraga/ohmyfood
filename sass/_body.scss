@@ -126,12 +126,14 @@
         background-color: ($white);
         border-radius: 15px;
         @include shadow-4;
+        
         img{
             object-fit: cover;
             width: 100%;
             border-top-right-radius: 15px;
             border-top-left-radius: 15px;
         }
+
     }
 
     .card-content{

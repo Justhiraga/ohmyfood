@@ -1,0 +1,30 @@
+footer{
+    background-color: ($grey);
+    padding: 22px;
+    img{
+        width: 139px;
+        height: 27px;
+        margin: 7px 0;
+        filter: invert(100%);
+    }
+
+    .f-liste{
+        @include Colum;
+    }
+
+    .f-text{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .fa-solid{
+            color: ($white);
+        }
+        P{
+             font-family:"Roboto",sans-serif;
+            font-weight:500;
+            font-size: 16px;
+            color: ($white);
+            margin: 7px 0;
+        }
+    }
+}

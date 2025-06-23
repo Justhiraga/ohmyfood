@@ -64,24 +64,10 @@
     }
 
     .etapes{
-        gap: 25px;
         width: 100%;
+        display: flex;
+        align-items: center;
     }
-
-    .numbers{
-            background-color: ($primary);
-            border-radius:100%;
-            width: 24px;
-            height: 24px;
-            margin: 0px;
-            @include Flexcenter;
-            font-family:"Roboto",sans-serif;
-            font-weight:500;
-            font-size: 14px;
-            color: ($white);
-            position: absolute;
-            left: -10px;
-        }
 
     .etapes-name{
         display: flex;
@@ -98,23 +84,56 @@
         padding-left: 30px;
     }
 
-    ol{
+    .étapes-liste{
+        @include Colum;
+        margin: 0;
         padding: 20px;
+        gap: 25px;
     }
 
     li::marker{
+        content: none;
+    }
+
+    li::before{
+        @include Flexcenter;
         content: "1";
         font-family:"Roboto",sans-serif;
         font-weight:500;
         font-size: 14px;
         background:($primary);
         border-radius:100%;
+        min-width: 24px;
+        min-height: 24px;
+        color: ($white);
+        position: absolute;
+        left: 28px;
     }
 
     .fa-store{
         color: ($primary);
     }
+    
+    .fa-heart{
+        width: 16px;
+        width: 16px;
+    }
 
+
+    .fa-heartfill{
+        opacity: 0;
+    }
+
+    .fa-gradiant:hover{
+        background: linear-gradient(0deg,#9356dc 0%, #ff79da 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        width: 16px;
+        height: 16px;
+        opacity: 100%;
+    }
+    
     .card-list{
          @include Colum;
          padding: 20px;
@@ -133,7 +152,7 @@
         background-color: ($white);
         border-radius: 15px;
         @include shadow-4;
-        
+        position: relative;
         img{
             object-fit: cover;
             object-position: bottom;
@@ -143,6 +162,21 @@
             border-top-left-radius: 15px;
         }
 
+    }
+
+    .new{
+        position: absolute;
+        background-color: ($tertiary);
+        color: ($green-font);
+        border-radius: 2px;
+        @include shadow-5;
+        font-family:"Roboto",sans-serif;
+        font-weight:500;
+        font-size: 14px;
+        margin: 0;
+        padding: 5px;
+        right: 12px;
+        top: 13px; 
     }
 
     .card-content{
@@ -169,5 +203,6 @@
             justify-content: end;
             position: absolute;
             right: 50px;
+
         }
     }

@@ -1,4 +1,4 @@
-@media (max-width: 767.98px){
+
 
     body{
         margin: 0;
@@ -64,7 +64,6 @@
     }
 
     .etapes{
-        @include Colum;
         gap: 25px;
         width: 100%;
     }
@@ -95,13 +94,21 @@
         width: 100%;
         height: 72px;
         position: relative;
-    }
-
-    .etapes-text{
-        display: flex;
-        align-items: center;
         gap: 20px;
         padding-left: 30px;
+    }
+
+    ol{
+        padding: 20px;
+    }
+
+    li::marker{
+        content: "1";
+        font-family:"Roboto",sans-serif;
+        font-weight:500;
+        font-size: 14px;
+        background:($primary);
+        border-radius:100%;
     }
 
     .fa-store{
@@ -129,8 +136,9 @@
         
         img{
             object-fit: cover;
+            object-position: bottom;
             width: 100%;
-            height: 231px;
+            height: 174px;
             border-top-right-radius: 15px;
             border-top-left-radius: 15px;
         }
@@ -163,4 +171,3 @@
             right: 50px;
         }
     }
-}

@@ -1,10 +1,15 @@
 footer{
     background-color: ($grey);
     padding: 22px;
-    img{
-        width: 139px;
-        height: 27px;
-        margin: 7px 0;
+    h2{
+        font-family: "Shrikhand", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 18px;
+        margin: 0px;
+        margin-bottom: 10px;
+        color: ($white);
+
     }
 
     .f-liste{

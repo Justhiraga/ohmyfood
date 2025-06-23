@@ -143,8 +143,13 @@ body {
   gap: 25px;
 }
 
-li::marker {
-  content: none;
+ol {
+  counter-reset: etapes;
+}
+
+li {
+  list-style-type: none;
+  counter-increment: etapes;
 }
 
 li::before {
@@ -152,7 +157,7 @@ li::before {
   justify-content: center;
   align-items: center;
   text-align: center;
-  content: "1";
+  content: counter(etapes);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -260,7 +265,8 @@ li::before {
   display: flex;
   justify-content: end;
   position: absolute;
-  right: 50px;
+  right: 25px;
+  top: 197px;
 }
 
 footer {

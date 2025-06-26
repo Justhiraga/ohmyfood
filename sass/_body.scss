@@ -1,6 +1,6 @@
 
 
-    body{
+body{
         margin: 0;
         background-color: ($main-color);
     }
@@ -138,14 +138,15 @@
         height: 16px;
         opacity: 100%;
     }
+
+
     
     .card-list{
          @include Colum;
          padding: 20px;
          gap: 18px;
         h2{
-         display: flex;
-            justify-content: start;
+            display: flex;
             width: 100%;
             font-family:"Roboto",sans-serif;
             font-weight:700;
@@ -210,5 +211,60 @@
             right: 25px;
             top: 197px;
 
+        }
+    }
+
+    @media (min-width: 1440px){
+        .Main-title{
+            h1{
+                width: 100%;
+                font-size: 40px;
+                margin: 30px 0 20px 0;
+            }
+
+            p{
+                width: 100%;
+
+            }
+        }
+
+        .Fonctionnement{
+            display: flex;
+            align-items: center;
+        }
+
+        .étapes-liste{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .etapes-name{
+            padding-right: 38px;
+            background-color: ($main-color);
+            position: relative;
+        }
+
+        li::before{
+            position: relative;
+            left: 13px;
+            z-index: 10;
+        }
+
+        .card-list{
+            display: flex;
+            flex-direction:initial;
+            flex-wrap: wrap;
+            justify-content: center;
+            h2{
+                padding-left: 180px;
+            }
+        }
+
+        .card{
+            width: 490px;
+            height: 251px;
+            img{
+                object-position: 0;
+            }
         }
     }

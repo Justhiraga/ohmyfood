@@ -2,7 +2,6 @@
 header nav {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 nav img {
@@ -51,7 +50,6 @@ body {
 .Main-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -99,7 +97,6 @@ body {
 .Fonctionnement {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: #ffffff;
   padding: 20px;
   gap: 15px;
@@ -137,7 +134,6 @@ body {
 .étapes-liste {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 0;
   padding: 20px;
   gap: 25px;
@@ -196,13 +192,11 @@ li::before {
 .card-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 20px;
   gap: 18px;
 }
 .card-list h2 {
   display: flex;
-  justify-content: start;
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -244,7 +238,6 @@ li::before {
 .card-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 10px;
 }
 .card-content h3 {
@@ -269,6 +262,51 @@ li::before {
   top: 197px;
 }
 
+@media (min-width: 1440px) {
+  .Main-title h1 {
+    width: 100%;
+    font-size: 40px;
+    margin: 30px 0 20px 0;
+  }
+  .Main-title p {
+    width: 100%;
+  }
+  .Fonctionnement {
+    display: flex;
+    align-items: center;
+  }
+  .étapes-liste {
+    display: flex;
+    flex-direction: row;
+  }
+  .etapes-name {
+    padding-right: 38px;
+    background-color: #f6f6f6;
+    position: relative;
+  }
+  li::before {
+    position: relative;
+    left: 13px;
+    z-index: 10;
+  }
+  .card-list {
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card-list h2 {
+    padding-left: 180px;
+  }
+  .card {
+    width: 490px;
+    height: 251px;
+  }
+  .card img {
+    -o-object-position: 0;
+       object-position: 0;
+  }
+}
 footer {
   background-color: #353535;
   padding: 22px;
@@ -285,7 +323,6 @@ footer h2 {
 footer .f-liste {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 footer .f-text {
   display: flex;

@@ -113,6 +113,7 @@ body{
         color: ($white);
         position: absolute;
         left: 28px;
+        z-index: 10;
     }
 
     .fa-store{
@@ -127,6 +128,7 @@ body{
 
     .fa-heartfill{
         opacity: 0;
+        transition: opacity 2s;
     }
 
     .fa-gradiant:hover{
@@ -136,11 +138,10 @@ body{
         background-clip: text;
         width: 16px;
         height: 16px;
-        opacity: 100%;
+        opacity: 1;
+        transition: opacity 2s;
     }
 
-
-    
     .card-list{
          @include Colum;
          padding: 20px;
@@ -239,25 +240,35 @@ body{
         }
 
         .etapes-name{
-            padding-right: 38px;
+            width: 335px;
             background-color: ($main-color);
             position: relative;
+            p{
+                margin: 0;
+            }
         }
 
         li::before{
             position: relative;
             left: 13px;
-            z-index: 10;
+        }
+
+
+        .restaurants{
+            display: flex;
+            justify-content: center;
+            h2{
+                padding-left: 40px;
+            }
         }
 
         .card-list{
             display: flex;
-            flex-direction:initial;
+            flex-direction:row;
             flex-wrap: wrap;
             justify-content: center;
-            h2{
-                padding-left: 180px;
-            }
+            width: 1080px;
+            gap: 50px 100px;
         }
 
         .card{

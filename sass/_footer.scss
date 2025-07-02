@@ -13,7 +13,6 @@ footer{
 
     }
 
-
     .f-text{
         display: flex;
         align-items: center;
@@ -21,6 +20,7 @@ footer{
         .fa-solid{
             color: ($white);
         }
+        
         P{
              font-family:"Roboto",sans-serif;
             font-weight:500;
@@ -30,12 +30,12 @@ footer{
         }
     }
 }
-    @media (min-width: 1440px){
-        footer{
-            display: flex;
-            flex-direction: row-reverse;
-            gap: 20px;
 
+@media (min-width: 1440px){
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
 
         .f-info{
             display: flex;

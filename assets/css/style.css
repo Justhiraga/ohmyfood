@@ -31,20 +31,33 @@ nav img {
   text-align: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
-.fa-solid {
+.h-text .fa-solid {
   color: #353535;
   width: 12px;
   height: 16px;
 }
 
+.img-box-2 {
+  z-index: 10;
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.i-arrow::before {
+  color: #353535;
+  display: flex;
+  font-size: x-large;
+  position: relative;
+  right: 58px;
+}
+
 body {
   margin: 0;
   background-color: #f6f6f6;
-}
-
-.main-container {
-  width: 100%;
 }
 
 .Main-title {
@@ -272,6 +285,13 @@ li::before {
   position: absolute;
   right: 25px;
   top: 197px;
+}
+
+.main-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 275px;
 }
 
 @media (min-width: 1440px) {

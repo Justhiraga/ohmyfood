@@ -221,7 +221,6 @@ li::before{
         position: absolute;
         right: 25px;
         top: 197px;
-
     }
 }
 
@@ -243,8 +242,10 @@ li::before{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     padding: 0 13px;
-    top: -60px;
+    margin-top: -50px;
     background-color: ($main-color);
+    width: 100%;
+    box-sizing: border-box;
     h1{
         font-family: "Shrikhand", serif;
         font-weight: 400;
@@ -308,17 +309,31 @@ li::before{
     background-color: ($white);
     @include shadow-4;
     padding: 12px 15px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
     h3{
         font-family:"Roboto",sans-serif;
         font-weight:500;
         font-size: 18px;
         margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-wrap-mode: nowrap;
+        transition: width 600ms ease-in;
+        width: 100%;
     }
-    p{
+
+    .description{
         font-family:"Roboto",sans-serif;
         font-weight:300;
         font-size: 15px;
         margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-wrap-mode: nowrap;
+        transition: width 600ms ease-in;
+        width: 100%;
     }
 
     .price{
@@ -327,7 +342,47 @@ li::before{
         font-size: 15px;
         position: absolute;
         right: 25px;
-        bottom: 15px;
+        transition: 600ms ease-in;
+    }
+
+    i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: ($tertiary);
+        color: (white);
+        width: 60px;
+        height: 65px;
+        position: absolute;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        top: 0px;
+        right: -60px;
+        transition: right 600ms ease-in;
+    }
+
+}
+
+.cards:hover{
+    .price{
+        transition: 600ms ease-in;
+        right: 75px;
+    }
+
+    i{
+        
+        transition: right 600ms ease-in;
+        right: 0px;
+    }
+
+    .description{
+        width: calc(100% - 90px);
+        transition: width 600ms ease-in;
+    }
+
+    h3{
+        width: calc(100% - 90px);
+        transition: width 600ms ease-in;
     }
 }
 

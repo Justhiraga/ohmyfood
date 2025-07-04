@@ -438,6 +438,29 @@ li::before {
     -o-object-position: 0;
        object-position: 0;
   }
+  .title {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+  }
+  .title i {
+    right: -35px;
+    position: absolute;
+  }
+  .food-list {
+    width: 634px;
+  }
+  .Main {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  .main-container {
+    width: 1055px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 footer {
   background-color: #353535;

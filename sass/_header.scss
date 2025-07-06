@@ -39,18 +39,21 @@ nav{
 
 }
 //PAGE 2//
+@media (max-width: 1440px){
+    .img-box-2{
+        z-index: 10;
+        width: 100%;
+        @include shadow-2;
+        @include Flexcenter;
+        position: relative;
+    }
 
-.img-box-2{
-    z-index: 10;
-    width: 100%;
-    @include shadow-2;
-    @include Flexcenter;
-}
-
-.i-arrow::before{
-    color: ($grey);
-    display: flex;
-    font-size: x-large;
-    position: relative;
-    right: 58px;
+    .i-arrow::before{
+        color: ($grey);
+        display: flex;
+        font-size: x-large;
+        position: absolute;
+        left: 17px;
+        bottom: 21px;
+    }
 }

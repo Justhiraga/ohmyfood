@@ -26,6 +26,18 @@
             </div>
         </nav>
     </header>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".loader-wrapper").classList.add("loader-wrapper--hidden");
+
+            document.querySelector(".loader-wrapper").addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader-wrapper"));
+            })
+        })
+    </script>
     <div class="Main-title"> 
         <h1>Réservez le menu qui vous convient</h1>
         <p>Découvrez des restaurants d&#39;exception, sélectionnés par nos soins.</p>

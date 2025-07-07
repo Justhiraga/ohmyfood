@@ -1,0 +1,25 @@
+.slide-1{
+    @include Colum;
+    animation-name: slideright;
+    animation-duration: 1.50s;
+    gap:12px ;
+}
+
+.slide-2{
+    @include Colum;
+    animation-name: slideright;
+    animation-duration: 2s;
+    gap: 12px ;
+}
+
+.slide-3{
+    @include Colum;
+    animation-name: slideright;
+    animation-duration: 3s;
+    gap: 12px ;
+}
+
+
+@keyframes slideright{
+    from{transform: translateX(100px)}
+}

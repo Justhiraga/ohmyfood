@@ -19,6 +19,14 @@ nav{
     width: 100%;
     @include shadow-2;
     @include Flexcenter;
+    .i-arrow::before{
+        color: ($grey);
+        display: flex;
+        font-size: x-large;
+        position: absolute;
+        left: 17px;
+        top: 21px;
+    }
 }
 
 .h-text{

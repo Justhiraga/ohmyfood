@@ -17,6 +17,14 @@ nav img {
   align-items: center;
   text-align: center;
 }
+.img-box .i-arrow::before {
+  color: #353535;
+  display: flex;
+  font-size: x-large;
+  position: absolute;
+  left: 17px;
+  top: 21px;
+}
 
 .h-text {
   display: flex;
@@ -567,9 +575,9 @@ footer .f-text P {
     gap: 15px;
   }
 }
-.loader-wrapper {
+body .loader-wrapper {
   width: 100%;
-  height: 100%;
+  height: 152%;
   position: absolute;
   top: 0;
   left: 0;
@@ -578,15 +586,13 @@ footer .f-text P {
   justify-content: center;
   align-items: center;
   z-index: 10;
-  transition: opacity 2.5s, visibility 2.5s;
+  transition: opacity 1.75s, visibility 1.75s;
 }
-
-.loader-wrapper--hidden {
+body .loader-wrapper--hidden {
   opacity: 0;
   visibility: hidden;
 }
-
-.loader {
+body .loader {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -594,15 +600,13 @@ footer .f-text P {
   border: 4px solid #FF79DA;
   animation: loader 2s infinite ease;
 }
-
-.loader-inner {
+body .loader-inner {
   vertical-align: top;
   display: inline-block;
   width: 100%;
   background-color: #FF79DA;
   animation: loader-inner 2s infinite ease-in;
 }
-
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -635,5 +639,35 @@ footer .f-text P {
   }
   100% {
     height: 0%;
+  }
+}
+
+.slide-1 {
+  display: flex;
+  flex-direction: column;
+  animation-name: slideright;
+  animation-duration: 1.5s;
+  gap: 12px;
+}
+
+.slide-2 {
+  display: flex;
+  flex-direction: column;
+  animation-name: slideright;
+  animation-duration: 2s;
+  gap: 12px;
+}
+
+.slide-3 {
+  display: flex;
+  flex-direction: column;
+  animation-name: slideright;
+  animation-duration: 3s;
+  gap: 12px;
+}
+
+@keyframes slideright {
+  from {
+    transform: translateX(100px);
   }
 }/*# sourceMappingURL=style.css.map */

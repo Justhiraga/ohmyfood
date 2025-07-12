@@ -386,6 +386,10 @@ li::before{
     }
 }
 
+a{
+    text-decoration: none;
+    color: ($black);
+}
 
 
 
@@ -448,6 +452,14 @@ li::before{
         img{
             object-position: 0;
         }
+    }
+
+    .Fonctionnement{
+        h2{
+          position: relative;
+          left: 6.5rem;
+        }
+        
     }
  //PAGE 2//
 

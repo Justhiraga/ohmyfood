@@ -598,6 +598,7 @@ body .loader {
   height: 30px;
   position: relative;
   border: 4px solid #FF79DA;
+  border-radius: 15%;
   animation: loader 2s infinite ease;
 }
 body .loader-inner {
